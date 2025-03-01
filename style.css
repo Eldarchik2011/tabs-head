@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.tabcontent {
+    
+    padding: 0px;
+    height: 0px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.tabcontent p {
+    font-weight: bold;
+}
+.tabcontent.active {
+    
+padding: 20px;
+    height: 250px;
+ 
+}
+.tabbtn {
+    background-color: gray;
+    border: 0;padding: 15px;
+    font-size: 18px;
+    transition: 0.5s;
+    flex: 1;
+    
+}
+.tabbtn:hover:not(.active) {
+    background-color: rgb(187, 187, 187);
+    transition: 0.5s;
+}
+
+#HTML,
+.active[data-lang="HTML"] {
+    background: linear-gradient(red,  orangered);
+    
+}
+#CSS,
+.active[data-lang="CSS"] {
+    background: linear-gradient(rgb(0, 140, 255), rgb(0, 60, 255) );
+}
+#JavaScript,
+.active[data-lang="JavaScript"] {
+    background: linear-gradient( rgb(221, 212, 78), rgb(255, 238, 0));
+}
+#PHP,
+.active[data-lang="PHP"] {
+    background: linear-gradient( rgb(164, 32, 197), rgb(234, 0, 255));
+}
+
+
+#tablist {
+    width: 100%;
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    height: 10%;
+    
+}
+ 
+
+
