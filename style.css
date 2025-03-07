@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: rgb(68, 68, 68);
 }
 
 
@@ -37,31 +38,42 @@ padding: 20px;
     background-color: gray;
     border: 0;padding: 15px;
     font-size: 18px;
-    transition: 0.5s;
+    transition: 0.2s;
     flex: 1;
     
 }
 .tabbtn:hover:not(.active) {
     background-color: rgb(187, 187, 187);
-    transition: 0.5s;
-}
-
-#HTML,
-.active[data-lang="HTML"] {
-    background: linear-gradient(red,  orangered);
     
 }
-#CSS,
-.active[data-lang="CSS"] {
+
+#HTML {
+    background: linear-gradient(red,  orangered);
+    
+    
+}
+.active[data-lang="HTML"] {
+    background-color: orangered;
+}
+#CSS {
     background: linear-gradient(rgb(0, 140, 255), rgb(0, 60, 255) );
 }
-#JavaScript,
-.active[data-lang="JavaScript"] {
+
+.active[data-lang="CSS"] {
+    background-color: rgb(0,60,255);
+}
+#JavaScript {
     background: linear-gradient( rgb(221, 212, 78), rgb(255, 238, 0));
 }
-#PHP,
-.active[data-lang="PHP"] {
+.active[data-lang="JavaScript"] {
+    background-color: rgb(255,238, 0);
+}
+#PHP {
     background: linear-gradient( rgb(164, 32, 197), rgb(234, 0, 255));
+}
+
+.active[data-lang="PHP"] {
+    background-color: rgb(234, 0, 255);
 }
 
 
